@@ -29,7 +29,8 @@ package welovefdt.robotlegs.webinar.mvcs.commands {
 			for (var i : int = 0; i < xmlList.length(); i++) {
 				var rssItem : RSSDataItem = new RSSDataItem();
 				rssItem.title = xmlList[i]["title"];
-				rssItem.pubData = xmlList[i]["pubData"];
+				rssItem.pubData = xmlList[i]["pubDate"];
+				rssItem.author = xmlList[i]["author"];
 				rssItem.link = xmlList[i]["link"];
 				model.addItem(rssItem);
 			}

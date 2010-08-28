@@ -7,7 +7,8 @@ package welovefdt.robotlegs.webinar.mvcs.models.vo {
 		private var _description : String;
 		private var _link : String;
 		private var _author : String;
-		private var _pubData : String; 
+		private var _pubData:String;
+		private var _pubDate:String;
 
 		public function get title() : String {
 			return _title;
